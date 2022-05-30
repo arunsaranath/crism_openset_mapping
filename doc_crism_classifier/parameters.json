@@ -1,0 +1,17 @@
+{
+  "model_type": "Dense",
+  "class_mode": "param",
+  "model_info": {
+    "n_nodes": [100, 50],
+    "dropout": 0.3,
+    "batch_norm": null
+    },
+  "fit_params": {
+    "batch_size": 250,
+    "epochs": 200,
+    "verbose": 2,
+    "shuffle": "True",
+    "initial_epoch": 0
+  },
+  "starting_lr": 0.00001
+}

@@ -1,0 +1,11 @@
+from matplotlib import pyplot as plt
+
+fig1, axs = plt.subplots(2,1, sharex=True)
+axs[0].plot(self.wavelength, exemplar_spectra[ii, :])
+axs[0].plot(self.wavelength, self.given_spectra[np.argmax(dist), :])
+axs[1].plot(self.wavelength, exemplar_crspectra[ii, :])
+axs[1].plot(self.wavelength, self.given_crspectra[np.argmax(dist), :])
+axs[0].set_ylabel('CRISM I/F')
+axs[1].set_ylabel('CR CRISM I/F')
+axs[1].set_xlabel('wavelength (microns)')
+plt.suptitle(f"{name_key[:11]}_{ii}")
