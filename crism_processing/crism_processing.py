@@ -143,7 +143,7 @@ class crism_processing(object):
         """
 
         assert isinstance(matrix, np.ndarray), "The <matrix> varible must be a numpy matrix"
-        assert len(matrix) == 2, "The <matrix> vavrible must be a 2d array"
+        assert len(matrix.shape) == 2, "The <matrix> vavrible must be a 2d array"
         if wvl is None:
             wvl = np.arange(0, matrix.shape[1])
         assert wvl.shape[0] == matrix.shape[1], "The <wvl> variable must have the same dimensions as each " \
